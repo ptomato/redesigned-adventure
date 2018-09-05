@@ -1,0 +1,19 @@
+---
+app-id: name.ptomato.RedesignedAdventure
+runtime: com.endlessm.apps.Platform
+runtime-version: master
+sdk: com.endlessm.apps.Sdk
+command: name.ptomato.RedesignedAdventure
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=dri
+  - --talk-name=org.freedesktop.portal.Flatpak
+modules:
+  - name: redesigned-adventure
+    buildsystem: meson
+    sources:
+      - type: git
+        path: .
+        branch: master

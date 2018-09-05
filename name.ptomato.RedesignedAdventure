@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gjs -I /app/share/redesigned-adventure /app/share/redesigned-adventure/main.js

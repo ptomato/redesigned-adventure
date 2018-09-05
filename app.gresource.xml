@@ -1,0 +1,8 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/name/ptomato/RedesignedAdventure">
+    <file compressed="true" preprocess="xml-stripblanks">controlpanel.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">dinosaur.svg</file>
+  </gresource>
+</gresources>

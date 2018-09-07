@@ -1,3 +1,10 @@
+/* global pkg */
+
+pkg.require({
+    Gdk: '3.0',
+    Gtk: '3.0',
+});
+
 const {Gio} = imports.gi;
 const System = imports.system;
 

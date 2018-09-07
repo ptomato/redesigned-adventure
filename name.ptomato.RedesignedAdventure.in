@@ -1,3 +1,8 @@
-#!/bin/sh
+#!@gjs@
 
-gjs -I /app/share/redesigned-adventure /app/share/redesigned-adventure/main.js
+imports.package.init({
+    name: 'name.ptomato.RedesignedAdventure',
+    version: '@version@',
+    prefix: '@prefix@',
+});
+imports.package.run(imports.main);

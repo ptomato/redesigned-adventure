@@ -17,4 +17,10 @@ sources = [
 
 install_data(sources)
 
-install_data('name.ptomato.RedesignedAdventure', install_dir: 'bin')
+subst = configuration_data()
+subst.set('gjs', gjs.path())
+subst.set('version', meson.project_version())
+subst.set('prefix', get_option('prefix'))
+configure_file(input: 'name.ptomato.RedesignedAdventure.in',
+    output: 'name.ptomato.RedesignedAdventure',
+    configuration: subst, install_dir: get_option('bindir'))
